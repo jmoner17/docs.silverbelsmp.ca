@@ -33,12 +33,10 @@ body {
 
 
 #home {
-  font-family: Averta, sans-serif;
-  color: rgb(0, 0, 0);
-  font-size: 30;
-  line-height: 55px;
-  float: left;
-  padding: 0px 24px;
+  width: 250px;
+  height: auto;
+  margin-top: 20px;
+  padding-left: 10px;
 }
 
 #listRight {
