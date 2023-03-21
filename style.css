@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Averta;
+  src: url('fonts/Averta.ttf');
+}
+
+body {
+  /*
+  background-image: url('images/background.png');
+  background-size: 10%;
+  */
+  background-color: rgb(212, 212, 212);
+
+}
+
+#topMenu {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  box-shadow: 0px 2px 3px;
+  z-index: 2;
+}
+#leftMenu {
+  width: 20%;
+  height: 25%;
+  background-color: red;
+  z-index: 1;
+}
+
+
+#home {
+  font-family: Averta, sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 30;
+  line-height: 55px;
+  float: left;
+  padding: 0px 24px;
+}
+
+#listRight {
+  margin-top: -20px;
+  padding: 10px 30px;
+  float: right;
+}
+#listDown {
+  float: left;
+}
+
+
+.classU {
+  float: left;
+  list-style: none;
+}
+
+.classD {
+  border-width: 3px;
+  list-style: none;
+}
+
+.textU {
+  display: block;
+  font-family: Averta, sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  margin: 20px 25px 0px 0px;
+  padding: 2px 2px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.2s ease-in-out;
+
+  /*
+  border-left: 2px solid #3ca0e7;
+  */
+}
+
+.textU:hover {
+  padding: 2px 2px;
+  border-radius: 10px;
+  background-color: rgba(75, 75, 75, 0.25);
+}
+.testD {
+  font-style: italic;
+  width: 120px;
+  display: block;
+  border-style: solid;
+  border-color: rgb(12, 12, 12);
+  border-top: 0px;
+ 
+  
+  font-family: Averta, sans-serif;
+  color: rgb(126, 81, 81);
+  font-size: 24px;
+  padding: 25px 15px;
+  text-decoration: none;
+}
+.testD:hover {
+  color: green;
+}
+
+
