@@ -1,0 +1,43 @@
+@font-face {
+  font-family: Averta;
+  src: url('fonts/Averta.ttf');
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-flex;
+  font-family: Averta, sans-serif;
+  color: white;
+  font-size: 24px;
+  margin: auto;
+  padding: 20px 20px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+li a:hover:not(.active) {
+  border-radius: 10px;
+  background-color: blue;
+}
+
+#image {
+  width: 300px;
+  float: left;
+}
+
+@media (max-width: 800px) {
+  #image {
+    width: 0px;
+  }
+}
