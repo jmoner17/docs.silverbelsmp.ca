@@ -14,16 +14,87 @@ body {
   background-size: 10%;
   */
   background-color: rgb(212, 212, 212);
-
+  min-width: 400px;
 }
+
 
 #topMenu {
   width: 100%;
   height: 60px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   box-shadow: 0px 2px 3px;
   z-index: 2;
 }
+
+#listRight { /* contains url buttons right of header */
+  margin-top: -26px;
+  padding: 20px 30px;
+  float: right;
+  transition: margin-right 0.4s ease-in-out;
+}
+
+@media (max-width: 800px) {
+  #listRight {
+    margin-right: calc(50% - 195px);
+  }
+}
+
+/*
+.button {
+  margin-top: 20px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+/* Change the background color when the button is hovered
+.button:hover {
+  background-color: #45a049;
+}
+*/
+
+.menu-btn-wrapper {
+  display: inline-flex;
+  align-items: center;
+  position: fixed; top: 0; right: 0;
+  margin: 6px 5px 0px 0px;
+  justify-content: center;
+  box-sizing: border-box;
+  z-index: 5;
+}
+.line {
+  transition: stroke-dasharray 400ms ease-in-out,
+    stroke-dashoffset 600ms ease-in-out;
+}
+.line1 {
+  
+  stroke-dasharray: 56.5, 200;
+}
+.line2 {
+  
+  stroke-dasharray: 56.5, 200;
+}
+.line3 {
+  
+  stroke-dasharray: 56.5, 200;
+}
+.menu-btn-wrapper:hover .line1,
+.menu-btn-wrapper:hover .line3 {
+  stroke-dasharray: 100, 200;
+  stroke-dashoffset: -121;
+}
+.menu-btn-wrapper:hover .line2 {
+  stroke-dashoffset: 57;
+}
+
 #leftMenu {
   width: 20%;
   height: 25%;
@@ -32,22 +103,32 @@ body {
 }
 
 
-#home {
+img#home { /* the top left logo on the header */
   width: 250px;
   height: auto;
   margin-top: 20px;
   padding-left: 10px;
+  transition: margin-left 0.4s ease-in-out;
 }
 
-#listRight {
-  margin-top: -20px;
-  padding: 10px 30px;
-  float: right;
-}
-#listDown {
+
+#listDown { /* box that contains the table of contents */
   float: left;
+  position: relative;
+  background-color: red;
+  width: 300px;
+  z-index: 1;
+  transition: margin-left 0.4s ease-in-out;
 }
 
+@media (max-width: 800px) {
+  #listDown {
+    margin-left: -300px;
+  }
+  img#home {
+    margin-left: -300px;
+  }
+}
 
 .classU {
   float: left;
@@ -60,7 +141,7 @@ body {
 }
 
 .textU {
-  display: block;
+  display: inline-flex;
   font-family: Averta, sans-serif;
   color: rgb(0, 0, 0);
   font-size: 24px;
@@ -80,6 +161,12 @@ body {
   border-radius: 10px;
   background-color: rgba(75, 75, 75, 0.25);
 }
+.textU:active {
+  padding: 2px 2px;
+  border-radius: 10px;
+  background-color: red;
+}
+
 .testD {
   font-style: italic;
   width: 120px;
