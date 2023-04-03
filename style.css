@@ -1,20 +1,18 @@
 :root {
+  --clr-6: rgb(17, 3, 82);
   --clr-1: #05386B;
   --clr-2: #379683;
   --clr-3: #5CDB95;
   --clr-4: #8EE4AF;
   --clr-5: #EDF5E1;
-}
-
-html {
-  font-size: 16px;
+  
 }
 
 body {
   background-color: var(--clr-3);
   margin: 0;
   font-family: Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 header {
@@ -22,21 +20,22 @@ header {
   position: sticky;
   top: 0;
   background-color: var(--clr-3);
-  border-bottom: 0.125rem solid var(--clr-1);
-  box-shadow: 0px 0.3125rem 0.3125rem -0.3125rem var(--clr-1);
+  border-bottom: 2px solid var(--clr-1);
+  box-shadow: 0px 5px 5px -5px var(--clr-1);
 }
 
 .icons {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
+  margin-top: 2px;
   width: 100%;
 }
 
 svg {
-  width: 6.25rem;
-  height: 1.25rem;
-  margin-right: 1.25rem;
+  width: 100px;
+  height: 20px;
+  margin-right: 20px;
 }
 
 path {
@@ -45,9 +44,11 @@ path {
 
 .main-nav {
   color: var(--clr-1);
+
   top: 0;
   left: 0;
   width: 100%;
+  height: 75px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,8 +56,8 @@ path {
 }
 
 .logo img {
-  width: 21.875rem;
-  height: 3.125rem;
+  width: 350px;
+  height: 50px;
 }
 
 .menu {
@@ -68,7 +69,7 @@ path {
 }
 
 .menu li {
-  margin-right: 1.25rem;
+  margin-right: 20px;
 }
 
 .menu li:last-child {
@@ -76,13 +77,14 @@ path {
 }
 
 .menu a {
-  padding: 0.625rem 1.25rem;
+  padding: 10px 20px;
   cursor: pointer;
   transition: color 0.1s ease-in-out;
+  border-radius: 20px;
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 
 .menu a:hover {
@@ -91,106 +93,43 @@ path {
 
 .cta {
   background-color: var(--clr-1);
+
   color: var(--clr-3);
-  padding: 0.625rem 1.25rem;
-  border-radius: 1.25rem;
+
+  padding: 10px 20px;
+  border-radius: 20px;
   border: none;
   cursor: pointer;
-  margin: 0 3.125rem 0 3.125rem;
+  margin: 0px 50px 0px 50px;
   transition: background-color 0.1s ease-in-out;
+
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 20px;
+  box-shadow: 0px 1px 5px 2px var(--clr-6);
 }
 
 .cta:hover {
-  background-color: var(--clr-2);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 main {
-  padding: 2.5rem;
+  padding: 40px;
   text-align: center;
   color: var(--clr-5);
 }
 
 h1 {
-  font-size: 2.25rem;
-  margin-bottom: 1.25rem;
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
 footer {
   background-color: var(--clr-4);
-  padding: 1.25rem;
+
+  padding: 20px;
   text-align: center;
-}
-
-
-
-
-/* Media queries */
-@media only screen and (max-width: 768px) {
-  .logo img {
-    width: 15rem;
-    height: 2.5rem;
-  }
-
-  .menu li {
-    margin-right: 0.625rem;
-  }
-
-  .menu a {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-  }
-
-  .cta {
-    margin: 0 2rem 0 2rem;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-  }
-
-  main {
-    padding: 1.5rem;
-  }
-
-  h1 {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .logo img {
-    width: 12.5rem;
-    height: 2rem;
-  }
-
-  .menu li {
-    margin-right: 0.3125rem;
-  }
-
-  .menu a {
-    padding: 0.5rem 0.75rem;
-    font-size: 0.9375rem;
-  }
-
-  .cta {
-    margin: 0 1.25rem 0 1.25rem;
-    font-size: 0.9375rem;
-    padding: 0.5rem 0.75rem;
-  }
-
-  main {
-    padding: 1rem;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-    margin-bottom: 0.9375rem;
-  }
-
-  footer {
-    padding: 0.9375rem;
-  }
 }
